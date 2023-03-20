@@ -1,0 +1,171 @@
+@font-face {
+    font-family: HankenGrotesk;
+    src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 2rem;
+    font-family: HankenGrotesk;
+    font-size: 1rem;
+}
+
+main{
+    margin: 1em auto;
+    font-size: 1.125rem;
+    max-width: 370px;
+}
+
+/* ===========
+    BLUE PANEL
+============== */
+
+.blue-panel{
+    background-image: linear-gradient( hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    padding: 2em;
+    border-radius: 25px;
+}
+
+.blue-panel h1{
+    color: hsla(221, 100%, 96%, 0.7);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0 0 2rem;
+}
+
+.circle{
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    margin: 0 auto;
+    height: 165px;
+    width: 165px;
+    padding: 1em;
+    border-radius: 50%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.circle .result-num{
+    font-size: 4rem;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 0;
+}
+
+.circle .total-num{
+    color: hsla(221, 100%, 96%, 0.4);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.blue-panel p{
+    color: hsla(221, 100%, 96%, 0.8); 
+    font-size: 1rem;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+
+/* ===========
+    WHITE PANEL
+============== */
+
+.white-panel{
+    padding: 0 1.5em 1em;
+}
+
+.white-panel h2{
+    color: hsl(224, 30%, 27%);
+    font-size: 1.125rem;
+    margin: 1.5em 0;
+}
+
+.container{
+    display: flex;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+}
+
+.left{
+    display: flex;
+    gap: 10px;
+    font-weight: 500;
+}
+
+.container .right{
+    color:  hsla(224, 30%, 27%, 0.5); 
+    font-weight: 700;
+}
+
+.container .right span{
+    color: hsl(224, 30%, 27%); 
+}
+
+.reaction{
+    background-color: hsla(0, 100%, 67%, 0.1);
+    color: hsl(0, 100%, 67%);
+}
+
+.memory{
+    background-color: hsla(39, 100%, 56%, 0.1);
+    color: hsl(39, 100%, 56%);
+}
+
+.verbal{
+    background-color: hsla(166, 100%, 37%, 0.1);
+    color: hsl(166, 100%, 37%);
+}
+
+.visual{
+    background-color: hsla(234, 85%, 45%, 0.1);
+    color: hsl(234, 85%, 45%);
+}
+
+.btn{
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    display: block;
+    padding: 1em 1em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+.btn:hover, .btn:focus {
+    background-image: linear-gradient( hsl(252, 100%, 67%), hsl(241, 81%, 54%)); 
+}
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+
+/* ===========
+MEDIA QUERIES
+============== */
+
+@media (min-width: 600px) {
+    main{
+        display: flex;
+        gap: 1em;
+        max-width: 600px;
+        box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 0.41);
+        border-radius: 25px;
+    }
+
+    .blue-panel{
+        width: 50%;
+    }
+
+    .white-panel{
+        width: 50%;
+    }
+}
